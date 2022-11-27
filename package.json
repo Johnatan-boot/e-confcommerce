@@ -4,13 +4,13 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
-    "start":"node server",
+    "start": "node server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "engines":{
+  "engines": {
     "node": "16.15.1",
-    "npm" : "8.19.2"
+    "npm": "8.19.2"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +19,7 @@
     "@angular/compiler": "^14.1.0",
     "@angular/core": "^14.1.0",
     "@angular/forms": "^14.1.0",
+    "@angular/material": "^7.0.0",
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
