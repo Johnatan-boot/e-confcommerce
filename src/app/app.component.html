@@ -1,3 +1,56 @@
+<div class="body">
+  <mat-toolbar class="toolbar">
+    <span class="logo">Confeitaria do Jony</span>
+    </mat-toolbar>
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+      <li [ngbNavItem]="1">
+        <a ngbNavLink>Home</a>
+        <ng-template ngbNavContent>
+          <p>
+          </p>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="2">
+        <a ngbNavLink>Perfil</a>
+        <ng-template ngbNavContent>
+          <p>
+          </p>
+        </ng-template>
+      </li>
+      <li [ngbNavItem]="3">
+        <a ngbNavLink>Orçamentos</a>
+        <ng-template ngbNavContent>
+          <p>
+
+          </p>
+        </ng-template>
+      </li>
+    </ul>
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-card class="card__login">
+    <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+
+    <p class="title">Logue em Nossa Plataforma</p>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="">
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="senha" aria-label="senha" aria-describedby="">
+    </div>
+     <div class="container">
+      <div class="row">
+        <div class="col-sm- col-md-3 col-xl-3">
+          <button type="button" class="btn btn">Login</button>
+
+        </div>
+      </div>
+     </div>
+    
+  </mat-card>
+</mat-grid-list>
 
 
+</div>
 <router-outlet></router-outlet>
